@@ -1,0 +1,48 @@
+# scan a whole subnet
+nmap 192.168.0.*
+
+# scan an ip address range
+nmap 192.168.0.101-110
+
+# print host interfaces and route
+nmap -iflist
+
+# scan for specific port
+nmap -p 80 192.168.40.20
+
+# scan port with ranges
+nmap -p 80-160 192.168.40.1
+
+# stealthy scan
+nmap -sS 192.168.40.1
+
+# find host services version number
+nmap -sV 192.168.40.1
+
+# perform tcp NU<< scan to fool a firewall
+nmap -sN 192.168.40.1
+
+============================================
+sudo apt install net-tools
+
+# network interface and statistics
+netstat i
+
+# kernel interface table
+netstat -ie
+
+# display tcp connections 
+netstat -antp
+
+# statistics per protocol
+netstat -s
+
+# active listening ports
+netstat -l
+
+
+============================================
+# block connections from the ip address 10.10.10.10
+iptables -A input -S 10.10.10.10 -j DROP
+
+iptables -t nat -L -n

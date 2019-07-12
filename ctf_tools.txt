@@ -1,0 +1,22 @@
+file
+
+strings
+
+# sudo apt install libimage-exiftool-perl
+exiftool
+
+# extract data from given file
+foremost -i file
+
+pngcheck
+
+dumpkmap
+
+gunzip
+
+ipcalc
+
+uncompress
+
+zcat
+
