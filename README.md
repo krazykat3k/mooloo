@@ -1,0 +1,2 @@
+# mooloo
+ctf nifty tricks
